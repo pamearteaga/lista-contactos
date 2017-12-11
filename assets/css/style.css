@@ -14,4 +14,27 @@
 	margin-left: 20px;
 }
 
+.modal-content{
+	padding: 20px;
+	text-align: center;
+}
 
+input{
+	margin: 10px;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	outline: none;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.teal{
+	background-color: teal;
+	color: white;
+}
