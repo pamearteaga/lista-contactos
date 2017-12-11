@@ -4,18 +4,20 @@ $(document).ready(() => {
 
 });
 
-$("#save").click(() => {
+$("#save").click(function() {
 
-    function addContact(){
+    
     var nombre = $("#contactName").val();
+    $("#contactName").val ('');
     var numero = $("#contactNumber").val();
+    $("#contactNumber").val ('');
 
     $("#contactos").append('<div class="col-lg-6">' + 
         '<div class="panel panel-default">' +
         '<div class="panel-body">' + '<h2>' + nombre + '</h2>' 
         + '<hr>' + '<p>' + numero + '</p>'
         + '</div>' + '</div>' + '</div>');
-    };
+   
  });
 
 
