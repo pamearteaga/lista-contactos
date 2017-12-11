@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-					<meta charset="UTF-8">
+		<meta charset="UTF-8">
 	 <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
@@ -19,7 +19,7 @@
 		  <div class="container-fluid">
 		    <div class="navbar-header">
 		      <a class="navbar-brand" href="#">
-		        Lista de contactos
+		        <h4>Lista de contactos</h4>
 		      </a>
 		      <form class="navbar-form navbar-right" role="search">
 					  <div class="form-group">
@@ -40,18 +40,33 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h3 class="modal-title">Contacto</h3>
       </div>
-      <div class="modal-body">
-        <div><span class="glyphicon glyphicon-user" aria-hidden="true"></span><input type="text" name="name" placeholder="Nombre"></div>
-        <div><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span><input type="text" name="number" placeholder="Teléfono"></div>
+	      <div class="modal-body">
+	        <div><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+	        	<input type="text" name="name" placeholder="Nombre" id="contactName"></div>
+	        <div><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+	        	<input type="text" name="number" placeholder="Teléfono" id="contactNumber"></div>
       </div>
       <div class="modal-footer">
-        
-        <button type="button" class="btn teal">Guardar</button>
+        <button id="save" type="button" class="btn teal">Guardar</button>
       </div>
     </div>
   </div>
 </div>
-
+<section>  <!--contactos -->
+	<div class="container">
+		<div id="contactos" class="row">
+			<!--<div class="col-lg-6">
+				<div class="panel panel-default">
+				  <div class="panel-body">
+				    <h2>Nombre</h2>
+				    <hr>
+				    <p>+56 9 61918586</p>
+				  </div>
+			 </div>
+			</div>-->
+		</div><!--row -->
+	</div><!--container -->
+</section>
 	
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script type="text/javascript" src="assets/js/app.js"></script>
