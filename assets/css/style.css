@@ -1,0 +1,17 @@
+
+.navbar {
+    background-color: teal;
+    border:none;
+    border-radius: 0;
+    color: white;
+} 
+
+.navbar a {
+    color: white;
+} 
+
+.btn-info{
+	margin-left: 20px;
+}
+
+
