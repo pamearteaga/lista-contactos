@@ -15,10 +15,18 @@ $("#save").click(function() {
     $("#contactos").append('<div class="col-lg-6">' + 
         '<div class="panel panel-default">' +
         '<div class="panel-body">' + '<h2>' + nombre + '</h2>' 
-        + '<hr>' + '<p>' + numero + '</p>'
+        + '<hr>' + '<p>' + numero + '</p>' +
+        '<button id="delete" type="button" class="btn btn-danger pull-right">' + 
+        '<span class="glyphicon glyphicon-trash" aria-hidden="true">' + 
+        '</span>' + '</button>'
         + '</div>' + '</div>' + '</div>');
    
  });
+
+
+$(document).on('click','#delete', function(){
+    $(this).parent().remove();
+});
 
 
     //Este es el ID de este pin en particular
